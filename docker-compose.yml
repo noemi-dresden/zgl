@@ -1,0 +1,11 @@
+version: "3.1"
+
+services:
+  jupiter:
+    image: myjupiter
+    container_name: jupiter
+    volumes:
+      - ./data.xlsx:/home/data.xlsx
+      - ./src/ZGF.ipynb:/home/jovyan/ZGF.ipynb
+    ports:
+      - "8888:8888"
